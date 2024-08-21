@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndxYash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IndxYash</h1>
+        <div id="welcome-message" style="display: none;">
+            <h2>Welcome to IndxYash!</h2>
+            <p>Your journey of learning begins here. Explore quizzes, puzzles, quotes, and fun facts!</p>
+        </div>
+
+        <div id="auth-container">
+            <div id="login-form">
+                <img src="https://i.postimg.cc/7fpZ3RGM/kisspng-animation-teacher-cartoon-teacher-5a7a9d291030d6-7136174815179850650663.jpg" alt="Teacher" class="auth-image">
+                <h2>Login</h2>
+                <input type="text" id="login-username" placeholder="Username">
+                <input type="password" id="login-password" placeholder="Password">
+                <button id="login-btn">Login</button>
+                <p>Or login with phone number:</p>
+                <input type="text" id="login-phone" placeholder="Phone Number">
+                <button id="otp-btn">Send OTP</button>
+                <input type="text" id="otp-input" placeholder="Enter OTP" style="display:none;">
+                <button id="otp-login-btn" style="display:none;">Login with OTP</button>
+                <p>Don't have an account? <span id="show-register">Register here</span></p>
+            </div>
+            
+            <div id="register-form" style="display: none;">
+                <img src="https://i.postimg.cc/30Nx15F9/videoblocks-back-to-school-season-with-school-building-4k-video-animation-bt1airjjd-thumbnail-1080-0.png" alt="School" class="auth-image">
+                <h2>Register</h2>
+                <input type="text" id="register-username" placeholder="Username">
+                <input type="password" id="register-password" placeholder="Password">
+                <input type="text" id="register-phone" placeholder="Phone Number">
+                <button id="register-btn">Register</button>
+                <p>Already have an account? <span id="show-login">Login here</span></p>
+            </div>
+        </div>
+
+        <!-- Sections -->
+        <div id="sections-container" style="display: none;">
+            <h2>Choose Your Activity</h2>
+            <div class="section" id="quiz-section">Quizzes</div>
+            <div class="section" id="puzzle-section">Puzzles</div>
+            <div class="section" id="quote-section">Quotes</div>
+            <div class="section" id="fact-section">Facts</div>
+        </div>
+
+        <!-- Quiz Container -->
+        <div id="quiz-container" style="display: none;">
+            <div id="question"></div>
+            <div id="answers"></div>
+            <button id="next">Next Question</button>
+        </div>
+
+        <!-- Support Section -->
+        <div id="support-container" style="display: none;">
+            <h2>Need Help or Support?</h2>
+            <p>Call us at: <a href="tel:+8360870352">8360870352</a></p>
+            <p>Email us at: <a href="mailto:rajyash3145@gmail.com">rajyash3145@gmail.com</a></p>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
